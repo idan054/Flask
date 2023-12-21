@@ -5,6 +5,7 @@ from api.woo_requests.product_details_by_name import product_details_by_name
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -20,4 +21,4 @@ def success():
     return render_template('success.html')
 
 # Debug only
-# app.run(host='0.0.0.0', port=81)
+app.run(host='0.0.0.0', port=81)
