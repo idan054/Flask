@@ -1,6 +1,6 @@
 {
   "rewrites": [
     { "source": "/(.*)", "destination": "/api/index" },
-    { "source": "/success", "destination": "/api/success" }
+    { "source": "/success", "destination": "/api/index" }
   ]
 }
