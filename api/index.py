@@ -16,9 +16,9 @@ def success():
         main_field = request.form['main_field']
         print(main_field)
         data = product_details_by_name(main_field)
-        addRow(data) 
+        addRow(data)
     return render_template('success.html')
 
 # Debug only
-# app.run(host='0.0.0.0', port=81)
+app.run(host='0.0.0.0', port=81)
 
