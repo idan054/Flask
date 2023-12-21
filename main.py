@@ -18,6 +18,7 @@ def success():
         data = product_details_by_name(main_field)
         addRow(data) 
     return render_template('success.html')
-        
-app.run(host='0.0.0.0', port=81)
+
+# Debug only
+# app.run(host='0.0.0.0', port=81)
 
