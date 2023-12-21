@@ -44,7 +44,7 @@
         <script>
             function handleSubmit(event) {
                 event.preventDefault();
-
+                print('START handleSubmit')
                 document.getElementById('message').textContent = '...טוען';
                 var formData = new FormData(event.target);
                 fetch('/success', {
