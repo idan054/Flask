@@ -9,8 +9,9 @@ def addRow(row_values):
     
     credentials = ServiceAccountCredentials.from_json_keyfile_name('credentials.json')
     client = gspread.authorize(credentials)    
-    # spreadsheet_list = client.list_spreadsheet_files()
-    # print(spreadsheet_list)
+    spreadsheet_list = client.list_spreadsheet_files()
+    print("spreadsheet_list")
+    print(spreadsheet_list)
     # client.create(title="iMatch products")
     
     sh = client.open_by_key('1FfmbtfQaFDflDk1BBSWIJMULc0f-5L63LbvPFdhczBc')
