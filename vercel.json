@@ -4,11 +4,9 @@
   ],
   "functions": {
     "api/index.py": {
-      "includeFiles": "api/credentials.json",
       "includeFiles": "credentials.json"
     },
     "api/addRow.py": {
-      "includeFiles": "api/credentials.json",
       "includeFiles": "credentials.json"
     }
   }
