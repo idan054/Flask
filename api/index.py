@@ -21,4 +21,4 @@ def success():
     return render_template('success.html')
 
 # Debug only
-app.run(host='0.0.0.0', port=90)
+# app.run(host='0.0.0.0', port=90)
