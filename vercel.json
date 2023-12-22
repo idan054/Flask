@@ -2,5 +2,9 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/api/index" }
   ],
-  "includeFiles": ["credentials.json", "api/credentials.json"]
+    "functions": {
+      "api/**/*.py": {
+      "includeFiles": ["api/credentials.json"]
+    }
+  },
 }
