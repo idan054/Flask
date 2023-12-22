@@ -2,9 +2,7 @@ from flask import Flask, render_template, request
 from api.addRow import addRow
 from api.woo_requests.product_details_by_name import product_details_by_name
 
-
 app = Flask(__name__)
-
 
 @app.route('/')
 def index():
@@ -23,6 +21,3 @@ def success():
 
 # Debug only
 # app.run(host='0.0.0.0', port=91)
-
-if __name__ == "__main__":
-        app.run()
