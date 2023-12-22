@@ -1,14 +1,15 @@
 from flask import Flask, render_template, request
+
 # from api.addRow import addRow
 # from api.woo_requests.product_details_by_name import product_details_by_name
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def index():
     # return render_template('index.html')
     return "<h1>Welcome to Geeks for Geeks</h1>"
-
 
 # @app.route('/success', methods=['POST', 'GET'])
 # def success():
