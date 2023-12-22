@@ -7,11 +7,11 @@ import os
 app = Flask(__name__)
 
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+# @app.route('/')
+# def index():
+#     return render_template('index.html')
 
-@app.route('/api')
+@app.route('/')
 def api():
     with open(
         os.path.join(os.getcwd(), 'data', 'credentials.json'), mode='r'
