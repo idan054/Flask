@@ -9,5 +9,11 @@
     "api/addRow.py": {
       "includeFiles": "credentials.json"
     }
-  }
+  },
+
+      "builds": [
+        {"src": "app/index.py", "use": "@vercel/python"},
+        {"src": "data/*.json", "use": "@vercel/static"}
+    ],
+    "routes": [{"src": "/(.*)", "dest": "app/index.py"}]
 }
